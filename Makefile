@@ -77,6 +77,9 @@ $(KPART_A64): $(BZIMAGE_A64)
 		--board arm64-generic \
 		--kernel $(WORKDIR)/$(BZIMAGE_A64) \
 		--fdtdir $(WORKDIR)/dtbs \
+		--vboot-keyblock /usr/share/vboot/devkeys/kernel.keyblock \
+		--vboot-private-key /usr/share/vboot/devkeys/kernel_data_key.vbprivk \
+		--vboot-public-key /usr/share/vboot/devkeys/kernel_subkey.vbpubk \
 		--root none \
 		--kernel-cmdline "console=tty0" \
 		--output $(WORKDIR)/$(KPART_A64)
