@@ -27,22 +27,8 @@ Submarine provides a minimal Linux environmemt that lives in a small partition (
 
 Please make sure you have these dependencies first before building.
 
-```bash
-make
-gcc
-ccache
-flex
-bison
-elfutils-devel
-parted
-vboot-utils
-golang
-xz
-bc
-tar
-openssl-devel
-python3-pip
-uboot-tools
+```
+make gcc ccache flex bison elfutils-devel parted vboot-utils golang xz bc tar openssl-devel python3-pip uboot-tools
 ```
 
 Additionally, you'll need to install `u-root` and `depthcharge-tools` (if you have the [Terra repository](https://terra.fyralabs.com/), you can `dnf install` them). 
